@@ -1,0 +1,9 @@
+// https://containers.dev/implementors/json_reference/
+{
+  "name": "ruby",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace/ruby"
+}
