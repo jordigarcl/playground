@@ -2,6 +2,11 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk")
 
 var _ = require("underscore");
 
+const https = require('https')
+
+setInterval(() => {
+	https.get('https://stremio-addon-catalog-randomizer.onrender.com/manifest.json')
+}, 299000)
 
 // Docs: https://github.com/Stremio/stremio-addon-sdk/blob/master/docs/api/responses/manifest.md
 const manifest = {
