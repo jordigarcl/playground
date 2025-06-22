@@ -1,0 +1,9 @@
+// https://containers.dev/implementors/json_reference/
+{
+  "name": "stremio-addon-catalog-randomizer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace/stremio-addon-catalog-randomizer"
+}
